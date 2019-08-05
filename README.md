@@ -1,12 +1,12 @@
-# Loadbalancer
+# NginxTornadoLoadBalancer
 
-##Tornado Server
+## Tornado Server
 
 0. Write down code for service that displays the process pid for different input ports.
 1. Run the service(python3 index.py 1111) using 3 different input ports (eg. 1111, 2222, 3333).
 2. Go to localhost:1111/basic, localhost:2222/basic and localhost:3333/basic
 
-##Nginx
+## Nginx
 
 0. sudo nginx (If it shows error then 1, else 2)
 1. sudo fuser -k 80/tcp and service nginx start
