@@ -1,5 +1,9 @@
 # NginxTornadoLoadBalancer
 
+Why use nginx to deploy tornado instead of its built-in server?
+
+Since one Tornado process can only take advantage of one CPU core (Edit: See updated docs for a development on this), use Nginx to load-balance multiple Tornado processes to use multiple cores Additionally, Nginx is likely a more efficient static file handler than Tornado.
+
 ## Tornado Server
 
 0. Write down code for service that displays the process pid for different input ports.
