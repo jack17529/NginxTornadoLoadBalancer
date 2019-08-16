@@ -1,3 +1,4 @@
+#one can uncomment the comments to get a log file to see errors.
 #log_format upstreamlog '$server_name to: $upstream_addr [$request]'
 	#'upstream_response_time $upstream_response_time'
 	#'msec $msec request_time $request_time';
@@ -13,7 +14,7 @@ upstream pythonweb {
 server{
 	listen 80;
 
-	access_log /var/log/nginx/access.log upstreamlog;
+	#access_log /var/log/nginx/access.log upstreamlog;
 
 	location /basic {
 		proxy_pass http://pythonweb/basic;
