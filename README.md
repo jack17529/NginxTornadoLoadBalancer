@@ -15,7 +15,7 @@ Since one Tornado process can only take advantage of one CPU core (Edit: See upd
 Install nginx if not installed already.
 
 0. `sudo nginx` (If it shows error then 1, else 2)
-1. `sudo fuser -k 80/tcp and service nginx start`
+1. `sudo fuser -k 80/tcp` and `service nginx start`
 2. Write down `loadbalance.conf file` for load balancing
 3. Change default file present in /etc/nginx/sites-available folder to default file present in the repository
 4. Run this command to check the configrations sudo nginx -s reload
